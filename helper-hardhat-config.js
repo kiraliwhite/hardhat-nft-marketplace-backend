@@ -29,9 +29,14 @@ const DECIMALS = "8";
 const INITIAL_ANSWER = "130000000000";
 //定義以太幣對美元為1300元,然後小數點八位所以再加上8個0
 
+const frontEndContractsFile2 = "../nextjs-nft-marketplace-thegraph/constants/networkMapping.json";
+const frontEndAbiLocation2 = "../nextjs-nft-marketplace-thegraph/constants/";
+
 module.exports = {
   networkConfig,
   developmentChains,
   DECIMALS,
   INITIAL_ANSWER,
+  frontEndContractsFile2,
+  frontEndAbiLocation2,
 };

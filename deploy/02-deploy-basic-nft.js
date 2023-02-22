@@ -8,7 +8,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
   const arguments = [];
 
-  const BasicNft = await deploy("BasicNft", {
+  const BasicNft = await deploy("BasicNftTwo", {
     from: deployer,
     args: arguments,
     log: true,
@@ -21,4 +21,4 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   }
 };
 
-module.exports.tags = ["all", "basicNft"];
+module.exports.tags = ["all", "basicNftTwo"];

@@ -13,6 +13,7 @@ error NftMarketPlace__PriceNotMet(address nftAddress, uint256 tokenId, uint256 p
 error NftMarketPlace__NoProceeds();
 error NftMarketPlace__TransferFailed();
 
+//防止重入攻擊,所以繼承ReentrancyGuard
 contract NftMarketplace is ReentrancyGuard {
   //這個struct物件用於mapping
   struct Listing {
